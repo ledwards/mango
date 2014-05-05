@@ -33,6 +33,21 @@ func TestClickCssElementDoesNotExist(t *testing.T) {
   //pending
 }
 
+func TestClickLinkText(t *testing.T) {
+  mango := Start("http://localhost:3000")
+  defer mango.Quit()
+  mango.Visit("/")
+  mango.ClickLinkText("Link Test")
+
+  if !mango.HasCss("p#linked-to") {
+    t.Error("Expected to be on the \"linked to\" page")
+  }
+
+  if mango.CurrentPath() != "/link" {
+    t.Error("Expected path to be '/link'. Got " + mango.CurrentPath())
+  }
+}
+
 func TestHasCssReturnsTrue(t *testing.T) {
   mango := Start("http://localhost:3000")
   defer mango.Quit()

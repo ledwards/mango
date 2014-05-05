@@ -35,6 +35,11 @@ func (mango *Mango) ClickButtonText(text string) {
 }
 
 func (mango *Mango) ClickLinkText(text string) {
+  link, _ := mango.Driver.FindElement(selenium.ByXPATH, "//a[contains(., '" + text + "')]")
+  newURLString, _ := link.GetAttribute("href")
+  newURL, _ := url.Parse(newURLString)
+  link.Click()
+  mango.currentURL = *newURL
 }
 
 func (mango *Mango) ClickCss(selector string) {
