@@ -50,40 +50,40 @@ func (mango *Mango) ClickCss(selector string) {
   mango.currentURL = *newURL
 }
 
-func (mango *Mango) FillInLabel(path string) {
+func (mango *Mango) FillInLabel(label string) {
 }
 
-func (mango *Mango) FillInCss(path string) {
+func (mango *Mango) FillInCss(selector string) {
 }
 
-func (mango *Mango) ChooseLabel(path string) {
+func (mango *Mango) ChooseLabel(label string) {
 }
 
-func (mango *Mango) ChooseCss(path string) {
+func (mango *Mango) ChooseCss(css string) {
 }
 
-func (mango *Mango) CheckLabel(path string) {
+func (mango *Mango) CheckLabel(label string) {
 }
 
-func (mango *Mango) CheckCss(path string) {
+func (mango *Mango) CheckCss(css string) {
 }
 
-func (mango *Mango) UncheckLabel(path string) {
+func (mango *Mango) UncheckLabel(label string) {
 }
 
-func (mango *Mango) UncheckCss(path string) {
+func (mango *Mango) UncheckCss(css string) {
 }
 
-func (mango *Mango) AttachFileLabel(path string) {
+func (mango *Mango) AttachFileLabel(label string) {
 }
 
-func (mango *Mango) AttachFileCss(path string) {
+func (mango *Mango) AttachFileCss(css string) {
 }
 
-func (mango *Mango) SelectLabel(path string) {
+func (mango *Mango) SelectLabel(label string) {
 }
 
-func (mango *Mango) SelectCss(path string) {
+func (mango *Mango) SelectCss(css string) {
 }
 
 func (mango *Mango) Wait(time int) {
@@ -101,7 +101,7 @@ func (mango *Mango) CurrentURL() string {
 
 // Booleans
 
-func (mango *Mango) HasContent(path string) {
+func (mango *Mango) HasContent(content string) bool {
 }
 
 func (mango *Mango) HasCss(css string) bool {

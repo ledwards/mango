@@ -30,6 +30,7 @@ func TestClickCss(t *testing.T) {
 }
 
 func TestClickCssElementDoesNotExist(t *testing.T) {
+  // Test should fail rather than blowing up
   //pending
 }
 
