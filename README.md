@@ -6,7 +6,7 @@ A Selenium-based integration testing framework for Go
 Setup
 -----
 
-* OS X:
+### OS X:
 
 `brew install selenium-server-standalone`
 
