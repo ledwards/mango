@@ -20,7 +20,7 @@ func TestClickCss(t *testing.T) {
   mango.Visit("/")
   mango.ClickCss("a#link-test")
 
-  if mango.HasCss("p#linked-to") {
+  if !mango.HasCss("p#linked-to") {
     t.Error("Expected to be on the \"linked to\" page")
   }
 
