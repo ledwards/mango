@@ -29,4 +29,4 @@ Supported Methods
 
 Tests
 -----
-Make sure to run `cd fixture; go run main.go` in another window before running the tests. Future versions will run this seever for you in the background when you run the tests.
+Make sure to run `cd fixture; go run main.go` in another window before running the tests. Future versions will run this test server for you in the background when you run the test suite.
